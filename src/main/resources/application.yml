@@ -10,10 +10,6 @@ spring:
     database-platform:  org.hibernate.dialect.MySQLDialect
     hibernate:
       ddl-auto: update
-  h2:
-    console:
-      enabled: true
-      path: /h2-console
 
 server:
   port: 8088
