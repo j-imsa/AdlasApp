@@ -73,7 +73,7 @@ you can find the Postman exported collections and environment to import them!
 - Swagger:
     - http://localhost:8088/adlasapp/docs-ui
     - http://localhost:8088/adlasapp/api-docs
-    - ![]()
+    - ![Screenshot from 2025-01-23 13-51-17.png](Screenshot%20from%202025-01-23%2013-51-17.png)
 
 
 - DB:
