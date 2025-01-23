@@ -8,7 +8,6 @@ import ir.adlas.adlasapp.config.validation.annotation.publicid.ValidPublicId;
 import ir.adlas.adlasapp.ws.model.dto.ExemptionDto;
 import ir.adlas.adlasapp.ws.model.dto.ResponseDto;
 import ir.adlas.adlasapp.ws.service.ExemptionService;
-import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Positive;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
