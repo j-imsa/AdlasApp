@@ -1,0 +1,27 @@
+version: '0.1'
+
+services:
+  mysql:
+    image: mysql
+    container_name: adlasmysqldb
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: avs
+      MYSQL_USER: sa
+      MYSQL_PASSWORD: pass@123
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./data:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin
+    container_name: adlasphpmyadmin
+    environment:
+      PMA_HOST: adlasmysqldb
+      MYSQL_ROOT_PASSWORD: rootpass
+    ports:
+      - "8080:80"
+    depends_on:
+      - mysql
+
