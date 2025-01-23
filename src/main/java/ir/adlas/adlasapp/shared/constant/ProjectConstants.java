@@ -43,5 +43,9 @@ public class ProjectConstants {
     public static final String DOCUMENT_PUBLIC_ID_EXAMPLE_2_VALUE = "xyz789xyz789xyz789x@%&*";
     public static final String DOCUMENT_PUBLIC_ID_EXAMPLE_2_SUMMERY = "Example public ID 2, Invalid";
 
+    // ======================== Exception ======================== //
+    public static final String EXCEPTION_MESSAGE = "message";
+    public static final String EXCEPTION_PATH = "path";
+    public static final String EXCEPTION_PATTERN = "%s %s";
 
 }
