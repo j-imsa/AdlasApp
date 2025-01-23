@@ -2,12 +2,12 @@ spring:
   application:
     name: AdlasApp
   datasource:
-    url: jdbc:h2:mem:adlasappdb
-    driverClassName: org.h2.Driver
+    url: jdbc:mysql://localhost:3306/avs
+    driverClassName: com.mysql.cj.jdbc.Driver
     username: sa
     password: pass@123
   jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
+    database-platform:  org.hibernate.dialect.MySQLDialect
     hibernate:
       ddl-auto: update
   h2:
