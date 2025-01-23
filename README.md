@@ -2,6 +2,20 @@
 
 ### About the project
 
+- [X] t1: output will be ``Running practice task: EisenstadtInnsbruckLinz``
+- [X] t2: POST /exemption
+- [X] t3: POST /exemption + Input Validation
+- [X] t4: GET /exemption/{public_id}
+- [X] t5: PUT /exemption/{public_id} + exemption-dto
+- [X] t6: GET /exemption + pagination + mysql
+- [ ] t7: PUT /deploy-all
+- [X] t8: status
+- [ ] t9: PUT /deploy/{public_id}
+- [ ] t10: PUT /un-deploy/{public_id}
+- [ ] t11: JWT
+- [X] t12: Docs
+- [X] t13: Tests
+- [X] t14: Exception handling
 
 
 ### How to run (Setup)
@@ -49,9 +63,9 @@
 you can find the Postman exported collections and environment to import them!
 
 - Collection:
-  - ...
+  - [AdlasAppCollection.postman_collection.json](AdlasAppCollection.postman_collection.json)
 - Environment:
-  - ...
+  - [AdlasAppLocalEnv.postman_environment.json](AdlasAppLocalEnv.postman_environment.json)
 
 
 ### UI
@@ -63,8 +77,12 @@ you can find the Postman exported collections and environment to import them!
 
 
 - DB:
-    - http://localhost:8088/adlasapp/h2-console
-    - ![]()
+  - H2
+      - Testing Profile 
+      - Testing Repository Layer
+      - http://localhost:8088/adlasapp/h2-console
+  - MySQL
+    - [docker-compose.yml](docker-compose.yml)
 
 
 ### License

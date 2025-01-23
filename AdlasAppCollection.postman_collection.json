@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "8318e6b3-770f-4ae1-8666-cf2530780d0c",
+		"name": "AdlasAppCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3443036"
+	},
+	"item": [
+		{
+			"name": "Exemption",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Exe 1\",\n    \"description\": \"Desc 1\",\n    \"application\": \"cod2025.exe\",\n    \"hostnames\": \"PC1, PC2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/exemption",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"exemption"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/exemption?page=1&size=20",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"exemption"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "size",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get One",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/exemption/sOAD6bwh3wSIKXJlkQB6MQrtijQw3Y5JXs8OvkHhJRqmMp_WdDbnmhJdHZTDaDqZ",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"exemption",
+								"sOAD6bwh3wSIKXJlkQB6MQrtijQw3Y5JXs8OvkHhJRqmMp_WdDbnmhJdHZTDaDqZ"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Updated 3\",\n    \"description\": \"Desc Updated 3\",\n    \"application\": \"cod2025.exe Updated 3\",\n    \"hostnames\": \"PC1, PC2, PC003\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/exemption/sOAD6bwh3wSIKXJlkQB6MQrtijQw3Y5JXs8OvkHhJRqmMp_WdDbnmhJdHZTDaDqZ",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"exemption",
+								"sOAD6bwh3wSIKXJlkQB6MQrtijQw3Y5JXs8OvkHhJRqmMp_WdDbnmhJdHZTDaDqZ"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
